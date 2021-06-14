@@ -1,0 +1,18 @@
+{% extends 'celebal_site/main.html' %}
+{% block content %}
+
+<div class="header-bar">
+    <h1>Login</h1>
+</div>
+
+<div class="card-body">
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input class="button" type="Submit" value="Login">
+    </form>
+
+    <br>
+    <p>Dont have an account? <a href="{% url 'register' %}">Register</a> </p>  
+</div>
+    {% endblock content %}
