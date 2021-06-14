@@ -60,3 +60,5 @@ class RegisterPage(FormView):
         if self.request.user.is_authenticated:
             return redirect(task)
         return super(RegisterPage, self).get(*args, **kwargs)
+
+    
